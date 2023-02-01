@@ -27,7 +27,7 @@ Cargo.toml
     
     ```
     let mut running = true;
-while running == true {
+    while running == true {
   let mut buffer = String::new();
   io::stdin().read_line(&mut buffer)?;
 
@@ -46,7 +46,8 @@ while running == true {
    conn.execute("INSERT INTO notes (body) values (?1)", [trimmed_body])?;
   }
 }    
-    ```     
+   
+```     
 
 ## delete
 
